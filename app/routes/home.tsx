@@ -1,6 +1,5 @@
-import Header from '~/components/Header'
+import { Button } from '~/components/ui/button'
 import type { Route } from './+types/home'
-import { Outlet } from 'react-router'
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,8 +10,9 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <main>
+    <main className="container mx-auto bg-card p-4 border rounded-lg">
       <h1>Home</h1>
+      <Button onClick={() => console.log('clicked')}>Click me</Button>
     </main>
   )
 }
