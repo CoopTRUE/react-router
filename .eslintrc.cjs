@@ -11,9 +11,8 @@ module.exports = {
   plugins: ['@typescript-eslint', 'simple-import-sort'],
   rules: {
     'simple-import-sort/imports': ['warn', { groups: [['.*']] }],
-    'simple-import-sort/exports': 'warn',
     'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'off',
+    'react/jsx-sort-props': ['warn', { callbacksLast: true, shorthandFirst: true }],
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'no-empty-pattern': ['error', { allowObjectPatternsAsParameters: true }],
   },

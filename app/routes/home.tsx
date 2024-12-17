@@ -12,7 +12,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <main className="container mx-auto rounded-lg border bg-card p-4">
-      <img src={Trollface} alt="Trollface" className="mx-auto w-52" />
+      <img alt="Trollface" className="mx-auto w-52" src={Trollface} />
       <h1>Home</h1>
       <Button onClick={() => alert('clicked')}>Click me</Button>
     </main>
